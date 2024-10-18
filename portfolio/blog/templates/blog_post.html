@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post - Personal Portfolio</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1>Blog Post Title</h1>
+        <nav>
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'contact' %}">Contact</a>
+            <a href="{% url 'about-me' %}">About Me</a>
+            <a href="{% url 'blog_index' %}">Blogs</a>
+            <a href="{% url 'projects' %}">Projects</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>How I started with Web Development</h2>
+            <p>Posted on October 10, 2024</p>
+            <p>
+                Web development has always been a passion of mine. In this blog post, I'll share how I got started in
+                web development, the challenges I faced, and how I overcame them to build the portfolio you're browsing
+                right now.
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Personal Portfolio</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'contact' %}">Contact</a>
+            <a href="{% url 'about-me' %}">About Me</a>
+            <a href="{% url 'blog_index' %}">Blogs</a>
+            <a href="{% url 'projects' %}">Projects</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Who am I?</h2>
+            <p>
+                I'm Ian, a tech enthusiast and aspiring developer. I specialize in web development and enjoy
+                creating functional, beautiful websites.
+            </p>
+            <br>
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML, CSS, JavaScript</li>
+                <li>Django & Python</li>
+                <li>Responsive Design</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

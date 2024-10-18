@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Personal Portfolio</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1>My Blog</h1>
+        <nav>
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'contact' %}">Contact</a>
+            <a href="{% url 'about-me' %}">About Me</a>
+            <a href="{% url 'blog_index' %}">Blogs</a>
+            <a href="{% url 'projects' %}">Projects</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2><a href="{% url 'blog_post' %}">How I started with Web Development</a></h2>
+                <p>This post is about my journey into the world of web development...</p>
+            </article>
+            <br>
+            <article>
+                <h2><a href="{% url 'blog_post' %}">Understanding Responsive Design</a></h2>
+                <p>Learn the fundamentals of responsive design and why it's essential in modern web development...</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 My Blog. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

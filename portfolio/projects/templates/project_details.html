@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Detail - Personal Portfolio</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1>Project: E-Commerce Platform</h1>
+        <nav>
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'contact' %}">Contact</a>
+            <a href="{% url 'about-me' %}">About Me</a>
+            <a href="{% url 'blog_index' %}">Blogs</a>
+            <a href="{% url 'projects' %}">Projects</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Overview</h2>
+            <p>This project involved building a complete e-commerce platform that includes user authentication, product
+                management, and secure payment integration using PayPal.</p>
+            <br>
+            <h2>Technologies Used</h2>
+            <ul>
+                <li>Django</li>
+                <li>PostgreSQL</li>
+                <li>Vue.js</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 My Projects. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>

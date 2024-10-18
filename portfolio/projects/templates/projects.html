@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Personal Portfolio</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1>My Projects</h1>
+        <nav>
+            <a href="{% url 'index' %}">Home</a>
+            <a href="{% url 'contact' %}">Contact</a>
+            <a href="{% url 'about-me' %}">About Me</a>
+            <a href="{% url 'blog_index' %}">Blogs</a>
+            <a href="{% url 'projects' %}">Projects</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2><a href="{% url 'project_details' %}">E-Commerce Platform</a></h2>
+                <p>Developed a full-stack e-commerce platform using Django, PostgreSQL, and Vue.js.</p>
+            </article>
+            <br>
+            <article>
+                <h2><a href="{% url 'project_details' %}">Weather App</a></h2>
+                <p>A weather forecasting app built using Django, integrating APIs to fetch real-time weather data.</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 My Projects. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
